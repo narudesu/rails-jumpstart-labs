@@ -1,0 +1,17 @@
+[1mdiff --git a/blogger/app/controllers/articles_controller.rb b/blogger/app/controllers/articles_controller.rb[m
+[1mindex 42dc8e0..fa45304 100644[m
+[1m--- a/blogger/app/controllers/articles_controller.rb[m
+[1m+++ b/blogger/app/controllers/articles_controller.rb[m
+[36m@@ -6,4 +6,12 @@[m [mclass ArticlesController < ApplicationController[m
+   def show[m
+     @article = Article.find(params[:id])[m
+   end[m
+[32m+[m
+[32m+[m[32m  def new[m
+[32m+[m[32m    @article = Article.new[m
+[32m+[m[32m  end[m
+[32m+[m
+[32m+[m[32m  def create[m
+[32m+[m[41m    [m
+[32m+[m[32m  end[m
+ end[m
